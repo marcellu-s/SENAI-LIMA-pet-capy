@@ -1,0 +1,192 @@
+.top-header {
+    background-color: #DA9EFF;
+}
+
+.top-header small {
+    padding: 8px;
+}
+
+.navbar {
+    background-color: #F6DBF9;
+    display: block;
+}
+
+.mid-navbar {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    
+/*Navbar Stroke effect*/
+
+#nav-effect ul {
+    list-style: none;
+    margin: 0;
+}
+
+#nav-effect ul li {
+    display: inline-block;
+    display: inline;
+    margin: 20px;
+}
+
+#nav-effect ul li a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #6B2099;
+}
+
+#nav-effect ul li a, #nav-effect ul li a:after, #nav-effect ul li a:before {
+    transition: all 0.5s;
+}
+
+#nav-effect ul li a:hover {
+    color: #DA9EFF;
+}
+  
+#nav-effect.stroke ul li a {
+    position: relative;
+}
+
+#nav-effect.stroke ul li a:after, #nav-effect ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #DA9EFF;
+    height: 1px;
+}
+
+#nav-effect.stroke ul li a:hover:after {
+    width: 100%;
+}
+  
+#nav-effect ul li a {
+    transition: all 1s;
+}
+  
+#nav-effect ul li a:after {
+    text-align: left;
+    content: ".";
+    margin: 0;
+    opacity: 0;
+}
+
+#nav-effect ul li a:hover {
+    color: #DA9EFF;
+    z-index: 1;
+}
+
+#nav-effect ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    opacity: 1;
+}
+
+/* MODAL Login Form*/
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.my-form {
+    padding: 2em;
+    color: #fff;
+    max-width: 100%;
+    margin-inline: auto;
+    box-shadow: 0px 4px 6px 0 rgb(0, 0, 0, 0.5);
+    background-color: #6B2099;
+}
+
+.form-btn-close {
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+
+.header-form {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.form-campo {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.form-campo:focus {
+    background-color: inherit;
+    color: #fff;
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.btn-form {
+    border-radius: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.footer-form {
+    color: gray;
+    text-align: center;
+}
+
+.footer-form a {
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+.footer-form a:hover {
+    color: #fff;
+}
+
+/*--------*/
+
+@media only screen and (min-width: 700px) {
+    .smartphones {
+        display: none;
+        background-color: #DA9EFF;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        display: none;    
+    }
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.text-responsive {
+    color: #6B2099;
+    font-weight: bold;
+}
+
+.text-responsive:hover {
+    color: #DA9EFF;
+}
+
+.text-dropdown {
+    color: #6B2099;
+}
+
+.text-dropdown:hover{
+    color: #DA9EFF;
+}
