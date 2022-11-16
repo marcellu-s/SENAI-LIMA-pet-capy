@@ -380,79 +380,88 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <div id="cont-foot-1" class="text-center row">
             <div class="col-12 col-lg-4">
                 <p id="p-ft-1">Cadastre-se e fique sabendo das ofertas antes de todos!</p>
             </div>
             <form class="col-12 col-lg-8 justify-content-around">
-                <input class="input" type="email" name="" id="insira-email" placeholder="Insira o email">
-                <select class="input" name="" id="select">
-                    <option value="Selecione seu pet" active="true" hidden>Selecione seu pet</option>
-                    <option value="Gato">Gato</option>
-                    <option value="Passaro">Passaro</option>
-                    <option value="Cachorro">Cachorro</option>
-                </select>
-                <button class="input" id="botao" type="button">Cadastrar</button>
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <input class="input" type="email" name="" id="insira-email" placeholder="Insira o email">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <select class="input" name="" id="select">
+                            <option value="Selecione seu pet" active="true" hidden>Selecione seu pet</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Passaro">Passaro</option>
+                            <option value="Cachorro">Cachorro</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <button class="input" id="botao" type="button">Cadastrar</button>
+                    </div>
+                </div>
             </form>
         </div>
 
-        <div id="cont-foot-2" class="container-fluid row">
-            <div class="col-lg-4">
-                <p class="p-ft-2">Redes Sociais</p>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col" class="coluna-redes" >
-                            <img class="imgs-redes" src="imgs\logotipo-do-pinterest.png" alt="" srcset="">
-                        </div>
-                        <div class="col" class="coluna-redes" >
-                            <img class="imgs-redes" src="imgs\facebook.png" alt="" srcset="">
-                        </div>
-                        <div class="col" class="coluna-redes" >
-                            <img class="imgs-redes" src="imgs\linkedin.png" alt="" srcset="">
-                        </div>
-                        <div class="col" class="coluna-redes" >
-                            <img class="imgs-redes" src="imgs\instagram.png" alt="" srcset="">
-                        </div>
+        <div id="cont-foot-2" class="container row justify-content-around align-items-center">
+            <div class="col-lg-3">
+                <div class="row">
+                    <p class="p-ft-2">Redes Sociais</p>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <i class="bi bi-pinterest"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <div class="col-3">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="row">
+                    <p class="p-ft-2">Meios de Pagamento</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <img class="imgs-pag" src="img/icons/icon_mastercard.svg" alt="" srcset="">
+                    </div>
+                    <div class="col-3">
+                        <img class="imgs-pag" src="img/icons/icon_visa.svg" alt="" srcset="">
+                    </div>
+                    <div class="col-3">
+                        <img id="img-pix" src="img/icons/icone-pix.svg" alt="" srcset="">
+                    </div>
+                    <div class="col-3">
+                        <i class="bi bi-upc-scan"></i>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <p class="p-ft-2">Meios de Pagamento</p>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <img class="imgs-pag" src="imgs\mastercard-18.png" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            <img class="imgs-pag" src="imgs\elo-30.png" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            <img class="imgs-pag" src="imgs\visa.png" alt="" srcset="">
-                        </div>
-                        <div class="col">
-                            <img class="imgs-pag" src="imgs\icone-pix.svg" alt="" srcset="">
-                        </div>
-                    </div>
+                <div class="row">
+                    <p class="p-ft-2">Central de atendimento</p>
                 </div>
-            </div>
-
-            <div class="col-lg-4">
-                <p class="p-ft-2">Central de atendimento</p>
-                <div class="container">
-                    <p id="pezin-ft-2">XXXXX-XXXXX</p>
+                <div class="row">
+                    <p class="p-ft-2" id="pezin-ft-2">XXXXX-XXXXX  |  XXXXX-XXXXX</p>
                 </div>
             </div>
         </div>
 
         
         <div id="cont-foot-3"class="container-fluid">
-            <div class="container-fluid p-4">
+            <div class="container-fluid p-1">
                 <div class="row">
                     <div class="col-sm-12 text-white text-center">
                         <p id="p-ft-3">Copyright© 2022 PetCapy - Todo os direitos reservados</p>
-        
                     </div>
                 </div>
             </div>   

@@ -1,17 +1,18 @@
 p {
-    margin: 1px 0;
+    margin: .0625em 0;
 }
 
 /* Parte 1*/
 
 #cont-foot-1{
     background-color: #6B2099;
-    padding: 15px 70px;
-    margin: 0;
+    padding: .9375em 4.375em;
+    margin-left: -7.25vw;
+    width: 100vw;
 }
 
 #p-ft-1{
-    font-size: 15px;
+    font-size: .9375em;
     color: white;
     font-weight: 700;
 }
@@ -21,85 +22,95 @@ p {
 }
 
 .input {
-    height: 35px;   
-    width: 240px;
+    height: 2.6924em;   
+    width: 18.4616em;
     padding-left: 1em;
     background-color: #D9D9D9;
     
     border: none;
     border-radius: 5px;
 
-    font-size: 13px;
+    font-size: .8125em;
     font-weight: 700;
     color: #000000;
 }
 
 .input:focus-visible {
-    outline: 1px solid #DA9EFF;
+    outline: .1538em solid #DA9EFF;
 }
 
 #select {
-    width: 150px;
+    width: 11.5385em;
     cursor: pointer;
 }
 
 #botao {
-    width: 100px;
+    width: 7.6924em;
     padding: 0;
     background-color: #eeeeee;
 }
 
 /* Parte 2*/
 
-#cont-foot-2{
-    background-color: #EDCFFF;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-}
-
 .p-ft-2{
-    font-size: 20px;
+    font-size: .9375em;
     color: #6B2099;
     font-weight: 700;
-    text-align: center;
 }
 
-.coluna-redes{
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-left: 0px;
-    
+#cont-foot-2 {
+    padding: 2em;
+}
+
+
+#pezin-ft-2 {
+    color: #000000;
 }
 
 /* IMAGENS FOOTER */
 
-.imgs-redes{
-    height: 45px;
-    width: 45px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-  
+#cont-foot-2 i {
+    font-size: 1.875em;
+    color: #6B2099;
 }
 
 .imgs-pag{
-    height: 45px;
-    width: 55px;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#img-pix {
+    height: 30px;
+    width: 30px;
 }
 
 /* Parte 3 */
 
 #cont-foot-3{
     background-color: #DA9EFF;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: -7.25vw;
+    width: 100vw;
 }
 
 #p-ft-3{
     color: #00000080;
-    font-size: 15px;
-    margin-bottom: 0px;
+    font-size: .75em;
+}
+
+@media(max-width: 992px) {
+    .input {
+        margin-top: .625em;
+    }
+
+    #select {
+        width: 18.4616em;
+    }
+
+    .p-ft-2 {
+        margin-top: 1.3334em;
+    }
+
+    #pezin-ft-2 {
+        margin-top: .6667em;
+    }
 }
