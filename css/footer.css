@@ -1,50 +1,55 @@
+p {
+    margin: 1px 0;
+}
+
+/* Parte 1*/
+
 #cont-foot-1{
     background-color: #6B2099;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top:20px;
-    padding-bottom: 10px;
+    padding: 15px 70px;
+    margin: 0;
 }
 
 #p-ft-1{
-    font-size: 18px;
+    font-size: 15px;
     color: white;
-    font-weight: 600;
-}
-
-#insira-email{
-    height: 50px;
-    width: 170px;
-    color: #000000;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#select{
-    height: 50px;
-    width: 170px;
-    color: #000000;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#botao{
-    height: 50px;
-    width: 170px;
-    color: #000000;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.p-ft-2{
-    font-size: 20px;
-    color: #6B2099;
     font-weight: 700;
-    text-align: center;
 }
+
+#cont-foot-1 form {
+    display: flex;
+}
+
+.input {
+    height: 35px;   
+    width: 240px;
+    padding-left: 1em;
+    background-color: #D9D9D9;
+    
+    border: none;
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.input:focus-visible {
+    outline: 1px solid #DA9EFF;
+}
+
+#select {
+    width: 150px;
+    cursor: pointer;
+}
+
+#botao {
+    width: 100px;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+/* Parte 2*/
 
 #cont-foot-2{
     background-color: #EDCFFF;
@@ -52,6 +57,13 @@
     padding-right: 90px;
     padding-top: 25px;
     padding-bottom: 20px;
+}
+
+.p-ft-2{
+    font-size: 20px;
+    color: #6B2099;
+    font-weight: 700;
+    text-align: center;
 }
 
 .coluna-redes{
@@ -77,6 +89,8 @@
     margin-top: 5px;
     margin-bottom: 25px;
 }
+
+/* Parte 3 */
 
 #cont-foot-3{
     background-color: #DA9EFF;

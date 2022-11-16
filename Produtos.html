@@ -335,7 +335,7 @@
             </div>
         </div>
         <!-- Avaliações -->
-        <div class="row caixa">
+        <div class="row">
             <h2 class="title">Avaliações de Clientes</h2>
             <div class="row cards justify-content-around">
                 <div class="card col-12 col-lg-4">
@@ -381,31 +381,20 @@
     </main>
 
     <footer>
-        <div id="cont-foot-1" class="container-fluid text-center row">
-            <div class="col">
+        <div id="cont-foot-1" class="text-center row">
+            <div class="col-12 col-lg-4">
                 <p id="p-ft-1">Cadastre-se e fique sabendo das ofertas antes de todos!</p>
-                
             </div>
-            <div class="col">
-                <input type="email" name="" id="insira-email" placeholder="Insira o email">
-                
-            </div>
-            <div class="col">
-                
-                <select name="" id="select">
-                    <option value="Selecione seu pt">Selecione seu pt</option>
-
+            <form class="col-12 col-lg-8 justify-content-around">
+                <input class="input" type="email" name="" id="insira-email" placeholder="Insira o email">
+                <select class="input" name="" id="select">
+                    <option value="Selecione seu pet" active="true" hidden>Selecione seu pet</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Passaro">Passaro</option>
+                    <option value="Cachorro">Cachorro</option>
                 </select>
-            
-            </div>
-            
-            <div class="col">
-                <button id="botao">
-                    Cadastrar
-                    
-                </button>
-            
-            </div>
+                <button class="input" id="botao" type="button">Cadastrar</button>
+            </form>
         </div>
 
         <div id="cont-foot-2" class="container-fluid row">

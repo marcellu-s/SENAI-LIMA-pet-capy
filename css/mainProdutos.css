@@ -124,10 +124,11 @@ button {
     padding-top: 2em;
 }
 
-.row ul, p {
+.row ul, .title p {
     padding-top: 2em;
     padding-left: 3em;
 }
+
 
 #head-list {
     font-weight: 700;
@@ -156,6 +157,10 @@ button {
 .aval {
     font-weight: 700;
     padding-bottom: 2em;
+}
+
+.aval p {
+    padding-top: 2em;
 }
 
 .aval-bottom {
