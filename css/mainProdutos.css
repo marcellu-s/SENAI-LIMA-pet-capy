@@ -12,16 +12,16 @@ body {
 
 .caixa {
     padding-bottom: 2em;
-    border-bottom: .0625em solid rgba(0, 0, 0, 0.5);
+    border-bottom: .0625em solid #00000080;
 }
 
 /* Info Produto */
 
-#infoProduto {
+#info-produto {
     padding-top: 12em;
 }
 
-#nomeProduto {
+#nome-produto {
     border-bottom: .125em solid #C3C3C3 ;
 }
 
@@ -50,7 +50,7 @@ body {
     border-right: .0625em solid #C3C3C3;
 }
 
-#prodDisponivel {
+#prod-disponivel {
     font-size: .75em;
     font-weight: 700;
     margin: 0;
@@ -86,8 +86,8 @@ body {
     width: 2em;
     text-align: center;
     border: none;
-    border-top: .0625em solid rgba(0, 0, 0, 0.5);
-    border-bottom: .0625em solid rgba(0, 0, 0, 0.5);
+    border-top: .0625em solid #00000080;
+    border-bottom: .0625em solid #00000080;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -102,12 +102,12 @@ button {
 }
 
 .up {
-    border: .0625em solid rgba(0, 0, 0, 0.5);
+    border: .0625em solid #00000080;
     border-left: none;
 }
 
 .down {
-    border: .0625em solid rgba(0, 0, 0, 0.5);
+    border: .0625em solid #00000080;
     border-right: none;
 }
 
@@ -124,12 +124,13 @@ button {
     padding-top: 2em;
 }
 
-.row ul, p {
+.row ul, .title p {
     padding-top: 2em;
     padding-left: 3em;
 }
 
-#headList {
+
+#head-list {
     font-weight: 700;
 }
 
@@ -148,7 +149,7 @@ button {
     text-align: center;
 }
 
-.avalTop {
+.aval-top {
     padding-bottom: 0.25em;
     border-bottom: .0625em solid #C3C3C3;
 }
@@ -158,12 +159,16 @@ button {
     padding-bottom: 2em;
 }
 
-.avalBottom {
+.aval p {
+    padding-top: 2em;
+}
+
+.aval-bottom {
     font-weight: 300;
     border-top: .0625em solid #C3C3C3;
 }
 
-.avalBottom p {
+.aval-bottom p {
     padding: .5em;
     margin: 0;
 }
