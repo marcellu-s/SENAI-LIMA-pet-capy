@@ -1,3 +1,20 @@
+/* Icons Bootstrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+/* Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.primary-color {
+    color: #6B2099;
+}
+
+.secondary-color {
+    color: #DA9EFF;
+}
+
 .top-header {
     background-color: #DA9EFF;
 }
@@ -26,7 +43,6 @@
 #nav-effect ul li {
     display: inline-block;
     display: inline;
-    margin: 20px;
 }
 
 #nav-effect ul li a {
@@ -84,6 +100,10 @@
     z-index: -10;
     animation: fill 1s forwards;
     opacity: 1;
+}
+
+.responsive .dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 /* MODAL Login Form*/
@@ -154,6 +174,7 @@
     color: #fff;
 }
 
+
 /*--------*/
 
 @media only screen and (min-width: 700px) {
@@ -168,10 +189,6 @@
         display: none;    
     }
 
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
 }
 
 .text-responsive {
@@ -189,4 +206,96 @@
 
 .text-dropdown:hover{
     color: #DA9EFF;
+}
+
+.dropdown-header {
+    font-size: 1.2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+/* SLIDER */
+
+#slider-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#slider-container .carousel-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+/* PRODUTOS RECOMENDADOS */
+
+.recommended-products {
+    margin-bottom: 5em;
+}
+
+.tittle {
+    font-size: 1.40em;
+}
+
+@media (min-width: 700px) {
+    .tittle {
+        font-size: 2em;
+    }
+}
+
+/* SLIDER PRODUTOS RECOMENDADOS */
+
+#slider-products .carousel-inner {
+    padding: 1em;
+}
+
+#slider-products .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+#slider-products .carousel-control-prev, 
+#slider-products .carousel-control-next {
+    background-color: #6B2099;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 700px) {
+    #slider-products .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    #slider-products .carousel-inner {
+      display: flex;
+    }
+}
+
+#slider-products .card {
+    max-width: 100%;
+}
+
+#slider-products .card .img-wrapper {
+      max-width: 100%;
+      height: 15vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#slider-products .card img {
+      max-height: 200px;
+      max-width: 200px;
+}
+
+@media (max-width: 700px) {
+
+    #slider-products .card .img-wrapper {
+      height: 17em;
+    }
 }
