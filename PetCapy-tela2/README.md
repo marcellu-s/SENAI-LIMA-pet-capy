@@ -1,4 +1,4 @@
-# PET-CAPY
+# Projeto - Pet Shop
 * Trabalho acadêmico.
 
 Projeto criado a partir de uma requisição avaliativa. | Escola Senai Suiço-Brasileira - Técnico/Desenvolvimento de Sistemas - 1º Semestre.
