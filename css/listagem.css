@@ -1,0 +1,157 @@
+main {
+    margin-bottom: 5em;
+}
+
+#navigation {
+    margin-top: 1em;
+}
+
+/* DESCRIÇÃO */
+
+#description h4 {
+    margin-top: 3em;
+}
+
+#description p {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.sort {
+    margin-top:3em;
+}
+
+/* FILTRO / ORDENAR */
+
+#FilterAndSort {
+    margin: 0;
+    margin-bottom: 5em;
+}
+
+/* ORDENAR PRODUTOS */
+
+#ordenar {
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#ordenar {
+    gap: 1rem;
+}
+
+#ordenar h5 {
+    margin: 0;
+    font-weight: bold;
+    color: #6B2099;
+}
+
+#ordenar select {
+    opacity: 50%;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+/* FILTRO-BOTÃO*/
+
+#filter {
+    margin-top: 3em;
+}
+
+#filter .btn {
+    color: #6B2099;
+    outline: 1px solid #6B2099;
+}
+
+#filter .btn:hover {
+    color: #fff;
+    background-color: #6B2099;
+}
+
+/* FILTRO-MODAL */
+
+#filter #offcanvas h5 {
+    color: #6B2099;
+    font-weight: bold;
+}
+
+#filter .offcanvas-body p { 
+    color: #6B2099;
+}
+
+#filter .offcanvas-body a {
+    color: #6B2099;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#filter .offcanvas-body a:hover {
+    text-decoration: underline;
+} 
+
+#filter .offcanvas-body i {
+    margin-left: -4.5em;
+}
+
+#filter #clear {
+    display: flex;
+    align-items: center;
+}
+
+#filter canvas {
+    height: 1px;
+    width: 100%;
+    background-color: #DA9EFF;
+    margin-bottom: .4em;
+}
+
+#filter .title {
+    margin-bottom: .5em;
+}
+
+#marcas .more {
+    cursor: pointer;
+}
+
+/* LISTAGEM DE PRODUTOS*/
+
+#products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+#products img {
+    width: 150px;
+}
+
+#products .img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#products .card-title {
+    font-size: 1.1em;
+}
+
+#products .card-body strong{
+    font-size: 1.1em;
+}
+
+#products .card-body .badge {
+    max-width: 80px;
+    margin-top: 1.6em;
+    margin-left: 1em;
+    font-size: .8em;
+}
+
+/* PRÓXIMA PÁGINA */
+
+#next-pag li a{
+    color:#DA9EFF;
+}

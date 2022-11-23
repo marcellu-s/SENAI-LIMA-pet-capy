@@ -69,11 +69,11 @@
                         <li class="nav-item dropdown">
                             <a href="/" class="nav-link text-header" data-bs-toggle="dropdown" aria-expanded="false">Gatos</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Ração</a></li>
+                                <li><a class="dropdown-item" href="/gato/racao.html">Ração</a></li>
                                 <li><a class="dropdown-item" href="#">Petiscos</a></li>
-                                <li><a class="dropdown-item" href="#">Areias</a></li>
-                                <li><a class="dropdown-item" href="#">Farmácia</a></li>
-                                <li><a class="dropdown-item" href="#">Arranhadores e brinquedos</a></li>
+                                <li><a class="dropdown-item" href="/gato/areias.html">Areias</a></li>
+                                <li><a class="dropdown-item" href="/gato/medicamentos.html">Farmácia</a></li>
+                                <li><a class="dropdown-item" href="/gato/arranhadores.html">Arranhadores e brinquedos</a></li>
                                 <li><a class="dropdown-item" href="#">Beleza e limpeza</a></li>
                                 <li><a class="dropdown-item" href="#">Coleiras</a></li>
                                 <li><a class="dropdown-item" href="#">Camas e almofadas</a></li>
@@ -273,7 +273,7 @@
                     <div class="col-12 col-md-6">
                         <div class="h-100">
                             <h2 class="primary-color">Torne-se um assinante</h2>
-                            <p>Adquira vários benéficios ao virar um assinante na Pet Capy, tais como, descontos em todos os produtos, frete grátis, atendimento personalizado, brindes e muito amor!</p>
+                            <p>Adquira vários benéficios ao virar um assinante na Pet Capy, tais como, descontos em todos os produtos e em nossos serviços, frete grátis, atendimento personalizado.</p>
                             <button class="btn mt-2 primary-color" type="button">Saber mais</button>
                         </div>
                     </div>
@@ -416,6 +416,40 @@
                     </button>
                 </div>
             </div>
+            <!-- FAVORITOS DOS GATOS -->
+            <div class="container" id="fav">
+                <div class="col-12">
+                    <h2 class="tittle primary-color">Favoritos dos gatos</h2>
+                </div>
+                <div class="col-12">
+                    <div class="row g-4">
+                        <div class="card col-12 col-md-3">
+                            <a href="/gato/racao.html"><img src="/img/favoritos/gatos-racao.png" alt="raçao"></a>
+                            <div class="card-body">
+                                <a href="/gato/racao.html" class="card-title"><strong>Ração</strong></a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-md-3">
+                            <a href="/gato/areias.html"><img src="/img/favoritos/gatos-areia.png" alt="areia"></a>
+                            <div class="card-body">
+                                <a href="#" class="card-title"><strong>Areias</strong></a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-md-3">
+                            <a href="/gato/medicamentos.html"><img src="/img/favoritos/gatos-medicamentos.png" alt="medicamentos"></a>
+                            <div class="card-body">
+                                <a href="#" class="card-title"><strong>Medicamentos</strong></a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-md-3">
+                            <a href="/gato/arranhadores.html"><img src="/img/favoritos/gatos-arranhadores.png" alt="arranhadores"></a>
+                            <div class="card-body">
+                                <a href="#" class="card-title"><strong>Arranhadores</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- FAVORITOS DOS CACHORROS -->
             <div class="container" id="fav">
                 <div class="col-12">
@@ -450,52 +484,18 @@
                     </div>
                 </div>
             </div>
-            <!-- FAVORITOS DOS GATOS -->
-            <div class="container" id="fav">
-                <div class="col-12">
-                    <h2 class="tittle primary-color">Favoritos dos gatos</h2>
-                </div>
-                <div class="col-12">
-                    <div class="row g-4">
-                        <div class="card col-12 col-md-3">
-                            <img src="/img/favoritos/gatos-racao.png" alt="raçao">
-                            <div class="card-body">
-                                <a href="#" class="card-title"><strong>Ração</strong></a>
-                            </div>
-                        </div>
-                        <div class="card col-12 col-md-3">
-                            <img src="/img/favoritos/gatos-areia.png" alt="areia">
-                            <div class="card-body">
-                                <a href="#" class="card-title"><strong>Areias</strong></a>
-                            </div>
-                        </div>
-                        <div class="card col-12 col-md-3">
-                            <img src="/img/favoritos/gatos-medicamentos.png" alt="medicamentos">
-                            <div class="card-body">
-                                <a href="#" class="card-title"><strong>Medicamentos</strong></a>
-                            </div>
-                        </div>
-                        <div class="card col-12 col-md-3">
-                            <img src="/img/favoritos/gatos-arranhadores.png" alt="arranhadores">
-                            <div class="card-body">
-                                <a href="#" class="card-title"><strong>Arranhadores</strong></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
 
         <footer class="container-fluid">
 			<div class="row" id="footer1">
 				<div class="container">
 					<div id="cont-foot-1" class="text-center row">
-						<div class="col-12 col-lg-4">
+						<div class="col-12 col-xl-4">
 							<p id="p-ft-1">
 								Cadastre-se e fique sabendo das ofertas antes de todos!
 							</p>
 						</div>
-						<form class="col-12 col-lg-8 justify-content-around">
+						<form class="col-12 col-xl-8 justify-content-around">
 							<div class="row justify-content-around align-items-center">
 								<div class="col-12 col-lg-5">
 									<input
@@ -506,7 +506,7 @@
 										placeholder="Insira o email"
 									/>
 								</div>
-								<div class="col-12 col-lg-3">
+								<div class="col-12 col-xl-3">
 									<select class="input" name="" id="select">
 										<option value="Selecione seu pet" active="true" hidden>
 											Selecione seu pet
@@ -516,7 +516,7 @@
 										<option value="Cachorro">Cachorro</option>
 									</select>
 								</div>
-								<div class="col-12 col-lg-3">
+								<div class="col-12 col-xl-3">
 									<button class="input" id="botao" type="button">
 										Cadastrar
 									</button>

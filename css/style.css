@@ -34,19 +34,21 @@ body {
 #search-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 #search-container input {
     border-radius: 10px;
+    outline: none;
+}
+
+#search-container input:focus {
     box-shadow: none;
-    font-weight: bold;
-    outline: 1px solid #6B2099;
+    border: 1px solid #6B2099;
 }
 
 #search-input::placeholder {
     color: #6B2099;
-    text-align: center;
+    border-bottom-color: #6B2099;
 }
 
 #btn-login .btn {
@@ -304,8 +306,8 @@ body {
 #slider-products .carousel-control-prev, 
 #slider-products .carousel-control-next {
     background-color: #6B2099;
-    width: 6vh;
-    height: 6vh;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
