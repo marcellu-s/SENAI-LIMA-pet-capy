@@ -150,6 +150,13 @@ main {
     font-size: .8em;
 }
 
+/* CLASSIFICAÇÃO DE ESTRELAS */
+
+#products #star-rating {
+    margin-top: .3em;
+    color: #FFCA05;
+}
+
 /* PRÓXIMA PÁGINA */
 
 #next-pag li a{

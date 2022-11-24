@@ -26,6 +26,20 @@ body {
     padding-top: 5em;
 }
 
+#infoProduto img {
+    width: 100%;
+    background-color: inherit;
+}
+
+#valor {
+    margin-bottom: 2em;
+}
+
+#valor-desconto .badge {
+    margin-top: 3em;
+    font-size: 1em;
+}
+
 #nomeProduto {
     border-bottom: .125em solid #C3C3C3 ;
 }
@@ -80,9 +94,9 @@ body {
     background-color: #f9f1fd;
 }
 
-#valor {
+#valor .text-valor{
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 2em;
     color: #6B2099;
 }
 
@@ -161,6 +175,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .aval {
     font-weight: 700;
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
