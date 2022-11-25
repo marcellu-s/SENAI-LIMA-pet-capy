@@ -1,10 +1,5 @@
-/* Icons Bootstrap*/
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-/* Google Fonts - Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-* {
-    font-family: 'Roboto', sans-serif;
+body {
+    background-image: linear-gradient(#fff 10%, #EAD4FF 90%);
 }
 
 .primary-color {
@@ -21,11 +16,43 @@
 
 .top-header small {
     padding: 8px;
+    cursor: pointer;
 }
 
 .navbar {
     background-color: #F6DBF9;
-    display: block;
+}
+
+#navbar-main {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-container input {
+    border-radius: 10px;
+    outline: none;
+}
+
+#search-container input:focus {
+    box-shadow: none;
+    border: 1px solid #6B2099;
+}
+
+#search-input::placeholder {
+    color: #6B2099;
+    border-bottom-color: #6B2099;
+}
+
+#btn-login .btn {
+    box-shadow: 2px 2px 2px #ccc;
 }
 
 .mid-navbar {
@@ -218,7 +245,7 @@
 
 #slider-container {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 #slider-container .carousel-item img{
@@ -227,14 +254,31 @@
     border-radius: 30px;
 }
 
+/* BANNER-SERVIÇOS*/
+
+#service-banner {
+    margin-bottom: 5em;
+
+}
+
+
+#service-banner .btn {
+    outline: 1px solid #6B2099;
+}
+
+#service-banner .btn:hover {
+    color: #fff;
+    background-color: #6B2099;
+}
+
 /* PRODUTOS RECOMENDADOS */
 
-.recommended-products {
+#recommended-products {
     margin-bottom: 5em;
 }
 
-.tittle {
-    font-size: 1.40em;
+#recommended-products .tittle {
+    font-size: 1.6em;
 }
 
 @media (min-width: 700px) {
@@ -255,11 +299,15 @@
     border: none;
 }
 
+#slider-products .carousel-item {
+    max-width: 330px;
+}
+
 #slider-products .carousel-control-prev, 
 #slider-products .carousel-control-next {
     background-color: #6B2099;
-    width: 6vh;
-    height: 6vh;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -268,7 +316,6 @@
 @media (min-width: 700px) {
     #slider-products .carousel-item {
       margin-right: 0;
-      flex: 0 0 33.333333%;
       display: block;
     }
     #slider-products .carousel-inner {
@@ -277,12 +324,11 @@
 }
 
 #slider-products .card {
-    max-width: 100%;
+    width: 300px;
 }
 
 #slider-products .card .img-wrapper {
       max-width: 100%;
-      height: 15vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -298,4 +344,61 @@
     #slider-products .card .img-wrapper {
       height: 17em;
     }
+}
+
+#slider-products {
+    margin-bottom: 2em;
+}
+
+/* CARDS DE PORDUTOS */
+
+
+#slider-products .card-title {
+    font-size: 1.1em;
+}
+
+#slider-products .card-body strong{
+    font-size: 1.1em;
+}
+
+#slider-products .card-body .badge {
+    max-width: 80px;
+    margin-top: 1.6em;
+    margin-left: 1em;
+    font-size: .8em;
+}
+
+/* FAVORITOS DOS CACHORROS */
+
+#fav {
+    margin-bottom: 5em;
+}
+
+#fav .tittle {
+    font-size: 1.5em;
+}
+
+#fav .card {
+    font-size: 1.1em;
+    margin-top: 5em;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+#fav img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+#fav .card-title{
+    color: #6B2099;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fav .card-title:hover{
+    color: #DA9EFF;
 }

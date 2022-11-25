@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/listagem.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" href="/img/logo/logo_petcapy.png" type="image/x-icon">
+    <title>PetCapy</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- HEADER -->
+        <header>
+            <div class="container-fluid top-header responsive">
+                <div class="container text-end text-muted">
+                    <small>Nossas Lojas</small>
+                    <small>Assinante</small>
+                    <small>Marcas</small>
+                    <small>Atendimento</small>
+                    <small>Acompanhar pedido</small>
+                </div>
+            </div>
+            <nav class="navbar responsive">
+                <div class="container" id="navbar-main">
+                    <div class="row col-12">
+                        <div class="col-4">
+                            <a class="navbar-brand" href="/index.html">
+                                <img src="/img/logo/logoedit.png" width="120" height="75" alt="coala dormindo">
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <form id="search-container">
+                                <input class="form-control" id="search-input" type="search"
+                                    placeholder="Pesquise na Pet Capy" aria-label="Search">
+                            </form>
+                        </div>
+                        <div class="col-4 text-end" id="btn-login">
+                            <button type="button" class="btn" style="background-color: #DA9EFF; color: #6B2099;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="bi bi-person-circle"></i>
+                                <strong>Entrar</strong>
+                                |
+                                <small>Cadastrar</small>
+                            </button>
+                            <a href="/"><img src="/img/icons/sacola.svg" width="40" height="32" alt="bag icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mid-navbar">
+                    <div class="d-flex justify-content-center mx-auto stroke" id="nav-effect">
+                        <ul class="nav nav-pills" id="nav-items">
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link text-header" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Cachorros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ração</a></li>
+                                    <li><a class="dropdown-item" href="#">Petiscos</a></li>
+                                    <li><a class="dropdown-item" href="#">Tapetes</a></li>
+                                    <li><a class="dropdown-item" href="#">Farmácia</a></li>
+                                    <li><a class="dropdown-item" href="#">Coleiras</a></li>
+                                    <li><a class="dropdown-item" href="#">Beleza e limpeza</a></li>
+                                    <li><a class="dropdown-item" href="#">Camas e cobertores</a></li>
+                                    <li><a class="dropdown-item" href="#">Casas</a></li>
+                                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                    <li><a class="dropdown-item" href="#">Roupas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link text-header" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Gatos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Ração</a></li>
+                                    <li><a class="dropdown-item" href="#">Petiscos</a></li>
+                                    <li><a class="dropdown-item" href="#">Areias</a></li>
+                                    <li><a class="dropdown-item" href="#">Farmácia</a></li>
+                                    <li><a class="dropdown-item" href="#">Arranhadores e brinquedos</a></li>
+                                    <li><a class="dropdown-item" href="#">Beleza e limpeza</a></li>
+                                    <li><a class="dropdown-item" href="#">Coleiras</a></li>
+                                    <li><a class="dropdown-item" href="#">Camas e almofadas</a></li>
+                                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                    <li><a class="dropdown-item" href="#">Roupas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link text-header" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Pássaros</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Alimentação</a></li>
+                                    <li><a class="dropdown-item" href="#">Gaiolas e viveiros</a></li>
+                                    <li><a class="dropdown-item" href="#">Farmácia</a></li>
+                                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link text-header" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Peixes</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Alimentação</a></li>
+                                    <li><a class="dropdown-item" href="#">Equipamentos e Acessórios</a></li>
+                                    <li><a class="dropdown-item" href="#">Áquarios</a></li>
+                                    <li><a class="dropdown-item" href="#">Tratamento de água</a></li>
+                                    <li><a class="dropdown-item" href="#">Decoração</a></li>
+                                    <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                                    <li><a class="dropdown-item" href="#">Farmácia</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link text-header" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Outros Pets</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Coelhos</a></li>
+                                    <li><a class="dropdown-item" href="#">Tartaruga</a></li>
+                                    <li><a class="dropdown-item" href="#">Lagartos</a></li>
+                                    <li><a class="dropdown-item" href="#">Furão</a></li>
+                                    <li><a class="dropdown-item" href="#">Chinchilas</a></li>
+                                    <li><a class="dropdown-item" href="#">Hamster</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Modal Login form-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="btn-close btn-close-white form-btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="my-form">
+                                <h1 class="header-form">Acessar conta</h1>
+                                <form>
+                                    <div class="mb-3 mt-4 text-start">
+                                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control form-campo" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 mt-4 text-start">
+                                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                        <input type="password" class="form-control form-campo"
+                                            id="exampleInputPassword1">
+                                    </div>
+                                    <button type="submit" class="btn btn-light mt-3 btn-form">ENTRAR</button>
+                                </form>
+                                <p class="mt-4 footer-form">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Navbar for smartphones-->
+            <nav class="navbar smartphones">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/img/logo/logoedit.png" width="120" height="75" alt="coala dormindo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn" style="background-color: #DA9EFF; color: #6B2099;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="/img/icons/profile.svg" width="30" height="22" alt="ícone de perfil">
+                                <strong>Entrar</strong>
+                                <span>|</span>
+                                <small>Cadastrar</small>
+                            </button>
+                            <a href="/"><img src="/img/icons/sacola.svg" width="40" height="32" alt="bag icon"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li>
+                                    <h2 class="dropdown-header">Departamentos</h2>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/" class="nav-link text-responsive" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Cachorros</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-dropdown" href="#">Ração</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Petiscos</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Tapetes</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Farmácia</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Coleiras</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Beleza e limpeza</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Camas e cobertores</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Casas</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Acessórios</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Roupas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/" class="nav-link text-responsive" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Gatos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-dropdown" href="#">Ração</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Petiscos</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Areias</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Farmácia</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Arranhadores e
+                                                brinquedos</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Beleza e limpeza</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Coleiras</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Camas e almofadas</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Acessórios</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Roupas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/" class="nav-link text-responsive" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Pássaros</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-dropdown" href="#">Alimentação</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Gaiolas e viveiros</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Farmácia</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Acessórios</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/" class="nav-link text-responsive" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Peixes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-dropdown" href="#">Alimentação</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Equipamentos e
+                                                Acessórios</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Áquarios</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Tratamento de água</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Decoração</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Acessórios</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Farmácia</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="/" class="nav-link text-responsive" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Outros Pets</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-dropdown" href="#">Coelhos</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Tartaruga</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Lagartos</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Furão</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Chinchilas</a></li>
+                                        <li><a class="dropdown-item text-dropdown" href="#">Hamster</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2 class="dropdown-header">Procurando por:</h2>
+                                </li>
+                                <li>
+                                    <p2 class="primary-color">Nossas lojas</p2>
+                                </li>
+                                <li>
+                                    <p2 class="primary-color">Assinante</p2>
+                                </li>
+                                <li>
+                                    <p2 class="primary-color">Marcas</p2>
+                                </li>
+                                <li>
+                                    <p2 class="primary-color">Acompanhar pedido</p2>
+                                </li>
+                                <li>
+                                    <p2 class="primary-color">Atendimento</p2>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Pesquise na Pet Capy"
+                                    aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <!-- NAVEGAÇÃO -->
+                <div id="navigation">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Gato</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Ração</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- DESCRIÇÃO -->
+                <div id="description">
+                    <h4>RAÇÃO PARA GATOS</h4>
+                    <p class="text-muted">É fundamental oferecer uma ração rica em componentes nutricionais para garantir 
+                        todo o bem-estar e a felicidade dos nossos amigos de quatro patas.</p>
+                </div>
+                <!-- FILTRO / ORDENAR -->
+                <div class="row col-12" id="FilterAndSort">
+                    <!-- FILTRO -->
+                    <div class="col-12 col-md-6" id="filter">
+                        <button class="btn" 
+                            type="button" 
+                            data-bs-toggle="offcanvas" 
+                            data-bs-target="#offcanvas" 
+                            aria-controls="offcanvasStart">
+                            FILTRAR PRODUTOS
+                            <i class="bi bi-funnel-fill"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasStartLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasStartLabel">FILTRAR PRODUTOS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- LIMPAR FILTROS -->
+                            <div id="clear">
+                                <div class="row col-12">
+                                    <div class="col-6">
+                                        <a href="/gato/racao.html">Limpar filtros</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="bi bi-trash"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas></canvas>
+                            <!-- FAIXA DE PREÇO -->
+                            <div id="faixa-preço">
+                                <p class="title">FAIXA DE PREÇO</p>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label" for="check1">
+                                            R$ 0,00 - R$ 25,00 (37)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check2">
+                                        <label class="form-check-label" for="check2">
+                                            R$ 25,00 - R$ 50,00 (116)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check3">
+                                        <label class="form-check-label" for="check3">
+                                            R$ 50,00 - R$ 100,00 (48)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check4">
+                                        <label class="form-check-label" for="check4">
+                                            R$ 100,00 - R$ 200,00 (13)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check5">
+                                        <label class="form-check-label" for="check5">
+                                            + R$ 200,00 (17)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas></canvas>
+                            <!-- MARCAS -->
+                            <div id="marcas">
+                                <p class="title">MARCAS</p>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas1">
+                                        <label class="form-check-label" for="marcas1">
+                                            Royal Canin (26)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas2">
+                                        <label class="form-check-label" for="marcas2">
+                                            Whiskas (7)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas3">
+                                        <label class="form-check-label" for="marcas3">
+                                            Magnus Cat (13)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas4">
+                                        <label class="form-check-label" for="marcas4">
+                                            Gran Plus (12)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas5">
+                                        <label class="form-check-label" for="marcas5">
+                                            Beauty Pet (1)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="marcas6">
+                                        <label class="form-check-label" for="marcas6">
+                                            Affinity (13)
+                                        </label>
+                                    </div>
+                                    <p class="more">Ver mais...</p>
+                                </div>
+                            </div>
+                            <canvas></canvas>
+                            <!-- LINHAS -->
+                            <div id="linhas">
+                                <p class="title">LINHAS</p>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha1">
+                                        <label class="form-check-label" for="linha1">
+                                            Premium (79)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha2">
+                                        <label class="form-check-label" for="linha2">
+                                            Super Premium (78)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha3">
+                                        <label class="form-check-label" for="linha3">
+                                            Premium Especial (22)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha4">
+                                        <label class="form-check-label" for="linha4">
+                                            High Premium (8)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha5">
+                                        <label class="form-check-label" for="linha5">
+                                            Prescrita (4)
+                                        </label>
+                                    </div>
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="linha6">
+                                        <label class="form-check-label" for="linha6">
+                                            Standard (1)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas></canvas>
+                            <!-- IDADE -->
+                            <div id="porte">
+                                <p class="title">IDADE</p>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="idade1">
+                                        <label class="form-check-label" for="idade1">
+                                            Adulto (182)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="idade2">
+                                        <label class="form-check-label" for="idade2">
+                                            Filhote (63)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="idade3">
+                                        <label class="form-check-label" for="idade3">
+                                            sênior (29)
+                                        </label>
+                                    </div>
+                                </div>   
+                            </div>
+                            <canvas></canvas>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- ORDENAR -->
+                    <div class="col-12 col-md-6 sort">
+                        <div id="ordenar">
+                            <label for="sort-items"><h5>ORDENAR POR</h5></label>
+                            <select name="sort-items">
+                                <option value="relevante">Mais relevante</option>
+                                <option value="menor-preço">Menor preço</option>
+                                <option value="maior-preço">Maior preço</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+                <!-- LISTAGEM DE PRODUTOS -->
+                <div>
+                    <div class="row col-12 gap-3" id="products">
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="/produto/racao-granplus-choice.html"><img src="/img/produto/racao-gato-comprar/racao-granplus-choice-frango-carne.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração GranPlus Choice para Gatos Adultos Sabor Frang...</p>
+                                <strong>R$ 142,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 128,69</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="/produto/racao-allcats-mix.html"><img src="/img/produto/racao-gato/Ração Allcats Mix para Gatos Adultos.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Allcats Mix para Gatos Adultos 10,1kg</p>
+                                <strong>R$ 144,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 130,49</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="/produto/racao-whiskas-mix-de-carne.html"><img src="/img/produto/racao-gato/Ração Whiskas para Gatos Adultos Sabor Mix de Carnes.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Whiskas para Gatos Adultos Sabor Mix de Carnes</p>
+                                <strong>R$ 56,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 51,28</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="/produto/racao-golden-gatos-castrados-salmao.html"><img src="/img/produto/racao-gato/Ração Golden para Gatos Adultos Castrados Sabor Salmão.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Golden para Gatos Adultos Castrados Sabor Sa...</p>
+                                <strong>R$ 29,90</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 26,91</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Golden Seleção Natural para Gatos Adultos Sabor Frango e Arroz.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Golden Seleção Natural para Gatos Adultos...</p>
+                                <strong>R$ 29,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 26,99</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração GranPlus Gourmet para Gatos Castrados Sabor Salmão e Frango.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração GranPlus Gourmet para Gatos Castrados Sabor...</p>
+                                <strong>R$ 32,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 29,69</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração GranPlus para Gatos Adultos Castrados sabor Carne e Arroz.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração GranPlus para Gatos Adultos Castrados sabor ca...</p>
+                                <strong>R$ 67,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 61,19</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Nero para Gatos Adultos Sabor Frango e Peixe.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Nero para Gatos Adultos Sabor Frango e Peixe</p>
+                                <strong>R$ 219,90</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 197,91</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Royal Canin para Gatos Filhotes com Até 12 Meses de Idade.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Royal Canin para Gatos Filhotes com Até 12...</p>
+                                <strong>R$ 34,49</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 31,04</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Royal Canin Premium Cat para Gatos Adultos Castrados.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Royal Canin Premium Cat para Gatos Adultos...</p>
+                                <strong>R$ 68,19</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 61,37</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Royal Canin Sterilised para Gatos Adultos Castrados.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Royal Canin Sterilised para Gatos Adultos Castrado</p>
+                                <strong>R$ 31,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 28,79</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                        <div class="card col-3" style="width: 18rem;">
+                            <div class="img-card"><a href="#"><img src="/img/produto/racao-gato/Ração Whiskas para Gatos Filhotes Sabor Carne e Leite.webp" class="card-img-top" alt="ração para gato"></a></div>
+                            <div class="card-body row">
+                                <p class="card-title">Ração Whiskas para Gatos Filhotes Sabor Carne e Leite.</p>
+                                <strong>R$ 19,99</strong>
+                                <div id="star-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="badge rounded-pill text-light" style="background-color:#6B2099;">10% OFF</span>
+                                <p class="primary-color" style="font-size: 1.1em; font-weight: bold;">R$ 17,99</p>
+                                <small style="margin-top: -5px; color:#6B2099;">para assinantes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRÓXIMA PÁGINA -->
+                <div id="next-page">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#" style="background-color:#6B2099; color:#fff;">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#" style="color:#6B2099;">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#" style="color:#6B2099;">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="row" id="footer1">
+                <div class="container">
+                    <div id="cont-foot-1" class="text-center row">
+                        <div class="col-12 col-lg-4">
+                            <p id="p-ft-1">
+                                Cadastre-se e fique sabendo das ofertas antes de todos!
+                            </p>
+                        </div>
+                        <form class="col-12 col-lg-8 justify-content-around">
+                            <div class="row justify-content-around align-items-center">
+                                <div class="col-12 col-lg-5">
+                                    <input
+                                        class="input"
+                                        type="email"
+                                        name=""
+                                        id="insira-email"
+                                        placeholder="Insira o email"
+                                    />
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <select class="input" name="" id="select">
+                                        <option value="Selecione seu pet" active="true" hidden>
+                                            Selecione seu pet
+                                        </option>
+                                        <option value="Gato">Gato</option>
+                                        <option value="Passaro">Passaro</option>
+                                        <option value="Cachorro">Cachorro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <button class="input" id="botao" type="button">
+                                        Cadastrar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="container">
+                    <div
+                        id="cont-foot-2"
+                        class="row justify-content-around align-items-center"
+                    >
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <p class="p-ft-2">Redes Sociais</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="bi bi-pinterest"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <p class="p-ft-2">Meios de Pagamento</p>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img
+                                        class="imgs-pag"
+                                        src="../img/icons/icon_mastercard.svg"
+                                        alt=""
+                                        srcset=""
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <img
+                                        class="imgs-pag"
+                                        src="../img/icons/icon_visa.svg"
+                                        alt=""
+                                        srcset=""
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <img
+                                        id="img-pix"
+                                        src="../img/icons/icone-pix.svg"
+                                        alt=""
+                                        srcset=""
+                                    />
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-upc-scan"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-3">
+                            <div class="row">
+                                <p class="p-ft-2">Central de atendimento</p>
+                            </div>
+                            <div class="row">
+                                <p class="p-ft-2" id="pezin-ft-2">XXXXX-XXXXX | XXXXX-XXXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row" id="footer3">
+                <div class="container">
+                    <div id="cont-foot-3" class="container-fluid">
+                        <div class="container-fluid p-1">
+                            <div class="col-sm-12 text-white text-center">
+                                <p id="p-ft-3">
+                                    Copyright© 2022 PetCapy - Todo os direitos reservados
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

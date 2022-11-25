@@ -13,16 +13,34 @@ body {
 
 .caixa {
     padding-bottom: 2em;
-    border-bottom: .0625em solid #00000080;
+    border-bottom: .0625em solid rgba(0, 0, 0, 0.5);
+}
+
+#navigation {
+    margin-top: 1em;
 }
 
 /* Info Produto */
 
-#info-produto {
-    padding-top: 3em;
+#infoProduto {
+    padding-top: 5em;
 }
 
-#nome-produto {
+#infoProduto img {
+    width: 100%;
+    background-color: inherit;
+}
+
+#valor {
+    margin-bottom: 2em;
+}
+
+#valor-desconto .badge {
+    margin-top: 3em;
+    font-size: 1em;
+}
+
+#nomeProduto {
     border-bottom: .125em solid #C3C3C3 ;
 }
 
@@ -32,7 +50,7 @@ body {
 }
 
 .bi-star {
-    color: #00000040;
+    color: #FFCA05;
     font-size: 18px;
 }
 
@@ -51,7 +69,7 @@ body {
     border-right: .0625em solid #C3C3C3;
 }
 
-#prod-disponivel {
+#prodDisponivel {
     font-size: .75em;
     font-weight: 700;
     margin: 0;
@@ -76,9 +94,9 @@ body {
     background-color: #f9f1fd;
 }
 
-#valor {
+#valor .text-valor{
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 2em;
     color: #6B2099;
 }
 
@@ -87,8 +105,8 @@ body {
     width: 2em;
     text-align: center;
     border: none;
-    border-top: .0625em solid #00000080;
-    border-bottom: .0625em solid #00000080;
+    border-top: .0625em solid rgba(0, 0, 0, 0.5);
+    border-bottom: .0625em solid rgba(0, 0, 0, 0.5);
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -96,27 +114,28 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-.botoes {
+#btn-qnta button {
     height: 2em;
-    border: none;
     background: #fff;
 }
 
 .up {
-    border: .0625em solid #00000080;
+    border: .0625em solid rgba(0, 0, 0, 0.5);
     border-left: none;
 }
 
 .down {
-    border: .0625em solid #00000080;
+    border: .0625em solid rgba(0, 0, 0, 0.5);
     border-right: none;
 }
 
 #add {
+    height: 2em;
     width: 14.5em;
     background-color: #4DBE31;
     border-radius: 5px;
     color: #fff;
+    border: none;
 }
 
 /* Detalhes */
@@ -130,8 +149,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 3em;
 }
 
-
-#head-list {
+#headList {
     font-weight: 700;
 }
 
@@ -150,26 +168,23 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 
-.aval-top {
+.avalTop {
     padding-bottom: 0.25em;
     border-bottom: .0625em solid #C3C3C3;
 }
 
 .aval {
     font-weight: 700;
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.aval p {
-    padding-top: 2em;
-}
-
-.aval-bottom {
+.avalBottom {
     font-weight: 300;
     border-top: .0625em solid #C3C3C3;
 }
 
-.aval-bottom p {
+.avalBottom p {
     padding: .5em;
     margin: 0;
 }

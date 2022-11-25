@@ -1,3 +1,7 @@
+/* Icons Bootstrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+/* Google Fonts - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 p {
     margin: .0625em 0;
 }
@@ -96,7 +100,7 @@ p {
     font-size: .75em;
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     #cont-foot-1{
         padding: .9375em 1em;
     }
