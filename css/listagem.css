@@ -79,6 +79,7 @@ main {
 
 #filter .offcanvas-body p { 
     color: #6B2099;
+    font-weight: 700;
 }
 
 #filter .offcanvas-body a {
